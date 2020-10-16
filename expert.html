@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Color-Dojo </title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <nav>
+        <div><a class="logo" href="/">ColorDojo</a></div>
+        <ul>
+            <li><a href="./basic.html">Basic</a></li>
+            <li><a href="./intermediate.html">Intermediate</a></li>
+            <li><a href="./expert.html">Expert</a></li>
+        </ul>
+    </nav>
+
+    <main class="expert">
+
+        <form class="form-group" onsubmit="event.preventDefault(); handleGradient();">
+            <h3>Make a background gradient !</h3>
+            <input type="text" name="colorbox" id="colorbox" />
+              <small>To make a linear gradient- **Ex: direction, color1, color2, color3(optional)</small>
+              <small>To make a radial gradient - **Ex:color1, color2, color3(optional)</small>
+              <div class="radio-btn">
+                <label class="container">linear
+                  <input type="radio" name="radio" class="linear">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">radial
+                  <input type="radio" name="radio" class="radial">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            <button type="submit" id="submit">submit</button>
+          </form>
+
+    </main>
+    
+<!-- JavaScript  -->
+
+<script src="./expert.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

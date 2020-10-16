@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Open Sans", sans-serif;
+    background: hsl(206, 33%, 96%);
+    color: hsl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.85rem;
+    height: 100vh;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    width: 100%;
+    box-shadow: 2px 2px 8px 0px #bde3ef;
+    background: #fff;
+    height: 3.5rem;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+
+}
+
+nav li{
+    list-style: none;
+    letter-spacing: 0.25rem;
+}
+
+nav a{
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color:hsl(205, 86%, 17%);
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+nav a:hover{
+    color: hsl(205, 81%, 54%);
+}
+
+.logo{
+    font-family: 'Lilita One', cursive;
+    line-height: 1.25;
+    font-size: 2rem;
+    font-weight: 800;
+    color: hsl(205, 93%, 36%);
+}
+
+
+/* Basic */
+
+.basic{
+    background: hsl(206, 100%, 89%);
+}
+
+main {
+    height: 40vh;
+    width: 280px;
+    display: grid;
+    place-items: center;
+    background: #f6f6f7;
+    place-items: center;
+    margin: 15% auto;
+    
+  }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 20px 10px;
+    color: #aaa;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    animation-name: fadeInTop;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fadeInTop {
+    from {
+      top: -10px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px dashed black;
+    outline: none;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    background: hsl(205, 93%, 36%);
+    color: white;
+    cursor: pointer;
+  }
+
+
+
+  /* Advanced */
+
+  .advanced{
+      background: hsl(206, 100%, 89%);
+  }
+
+.btn-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  
+}
+
+
+/* Expert */
+
+.expert{
+    background: hsl(206, 100%, 89%);
+    height: 45vh;
+}
+
+small {
+    font-size: 9px;
+    margin-top: 10px;
+    color: rgb(82, 82, 82);
+    text-align: center;
+  }
+
+  .radio-btn {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 70%;
+    padding: 1rem;
+    font-size: 15px;
+    color: rgb(87, 87, 87);
+  }
+
+
+  /* Intermediate */
+
+  .intermediate{
+      background: hsl(206, 100%, 89%);
+  }
+
+  .form-group input#forever {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  form-group label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #0079bf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 57%;
+    left: 32.5%;
+    width: 6px;
+    height: 14px;
+    border: solid #0079bf;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+
+.container{
+    margin: 20% auto;
+}
+
+  .btn-grid {
+    display: flex;
+    padding: 1rem;
+    margin: auto 35%;
+  }
+
+h1{
+    text-align: center;
+}
+
+div button{
+    margin: 2rem;
+    border: 1px dashed #999;
+    border-radius: 10px;
+    box-shadow: 2px 3px 18px #22222205;
+}
